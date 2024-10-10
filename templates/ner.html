@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>NER</title>
+</head>    
+<body>
+
+    <form>
+        <label>Type your text here</label><br>
+        <textarea name='ner_text'></textarea><br>
+        <label>Type what you would like to search</label><br>
+        <textarea name='search_term'></textarea><br>
+        <input type="submit" value="Perform NER">
+    </form>
+
+    {% if response %}
+        <p>{{ response }}</p>
+
+    {% endif%}
+
+
+
+
+
+
+</body>
+</html>
